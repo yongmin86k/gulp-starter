@@ -34,14 +34,6 @@ gulp.task('scripts',
         })
 );
 
-gulp.task("scripts", function() {
-  return gulp
-    .src("./js/*.js")
-    .pipe(terser())
-    .pipe(rename({ extname: ".min.js" }))
-    .pipe(gulp.dest("./build/js"));
-});
-
 gulp.task("styles", function() {
   return gulp
     .src("./css/*.css")
