@@ -1,7 +1,3 @@
-console.log('hello world');
+import { hello } from './import';
 
-function sayHello(){
-    return 'Hello world'
-}
-
-alert('Wrong');
+console.log(hello);
